@@ -225,3 +225,15 @@ a {
   border-radius: 25px;
   font-family: "Lato", sans-serif;
   font-weight: 700; }
+
+@media (max-width: 1100px) {
+  .gallery-thumbs {
+    display: none; } }
+@media (max-width: 800px) {
+  .wrapper-swiper .slider-info-text {
+    bottom: 0px;
+    left: 1rem; }
+
+  .address,
+  .divider {
+    display: none; } }
