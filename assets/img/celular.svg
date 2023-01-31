@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.907" height="32.493" viewBox="0 0 20.907 32.493">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_29" data-name="Rectangle 29" width="20.907" height="32.493" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_29" data-name="Group 29" transform="translate(-1699 -56.368)">
+    <g id="Icono_Telefono" data-name="Icono Telefono" transform="translate(1699 56.368)">
+      <g id="Group_3" data-name="Group 3" clip-path="url(#clip-path)">
+        <path id="Path_2" data-name="Path 2" d="M16.853,0H4.054A4.011,4.011,0,0,0,0,3.957V28.535a4.011,4.011,0,0,0,4.054,3.957h12.8a4.011,4.011,0,0,0,4.054-3.957V3.957A4.011,4.011,0,0,0,16.853,0M1.848,7.168H19.059V24.782H1.848ZM4.054,1.8h12.8a2.183,2.183,0,0,1,2.206,2.154V5.364H1.848V3.957A2.183,2.183,0,0,1,4.054,1.8m12.8,28.885H4.054a2.183,2.183,0,0,1-2.206-2.153v-1.95H19.059v1.95a2.183,2.183,0,0,1-2.206,2.153" fill="#fff"/>
+        <path id="Path_3" data-name="Path 3" d="M108.528,45.783h4.313a.645.645,0,1,0,0-1.29h-4.313a.645.645,0,1,0,0,1.29" transform="translate(-100.23 -41.418)" fill="#fff"/>
+        <path id="Path_4" data-name="Path 4" d="M130.313,392.312a1.29,1.29,0,1,0,1.322,1.29,1.306,1.306,0,0,0-1.322-1.29" transform="translate(-119.859 -365.202)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg id="Icono_Linkedin" data-name="Icono Linkedin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39.218" height="40" viewBox="0 0 39.218 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_103" data-name="Rectangle 103" width="39.218" height="40" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_28" data-name="Group 28" clip-path="url(#clip-path)">
+    <path id="Path_31" data-name="Path 31" d="M.645,13.282H8.773V40H.645ZM4.71,0A4.768,4.768,0,0,1,9.419,4.818,4.763,4.763,0,0,1,4.71,9.629,4.759,4.759,0,0,1,0,4.818,4.764,4.764,0,0,1,4.71,0" fill="#fff"/>
+    <path id="Path_32" data-name="Path 32" d="M157.107,140.576h7.8v3.655h.112a8.5,8.5,0,0,1,7.689-4.315c8.231,0,9.75,5.532,9.75,12.724v14.654H174.33V154.3c0-3.1-.052-7.086-4.225-7.086-4.228,0-4.874,3.379-4.874,6.864v13.215h-8.124Z" transform="translate(-143.237 -127.294)" fill="#fff"/>
+  </g>
+</svg>

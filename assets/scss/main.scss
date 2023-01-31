@@ -1,0 +1,47 @@
+@import "header";
+@import "footer";
+@import "home";
+@import "swiper";
+@import "mobile_menu";
+
+
+* {
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.default-button {
+  background: none;
+  border: none;
+  color: #043E22;
+  background-color: #ffffff;
+  padding: .8rem 3rem;
+  border-radius: 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}

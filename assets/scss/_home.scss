@@ -1,0 +1,54 @@
+.main-image {
+  position: relative;
+
+  .bg-image {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+}
+
+.foot-main-image {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  width: 98%;
+  padding: 0 3%;
+
+  .social {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    a {
+      margin: 1rem 0;
+
+      img {
+        height: 35px;
+      }
+    }
+  }
+
+  .navigation-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+  }
+}
+
+.mouse-image {
+  width: 30px;
+  margin-top: 60px;
+}
+
+.cover-image {
+  width: 100%;
+  object-fit: cover;
+}

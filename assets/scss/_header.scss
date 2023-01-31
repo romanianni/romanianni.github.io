@@ -1,0 +1,59 @@
+.wrapper-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: transparent;
+  transition: background-color ease-in .2s;
+
+  .logo {
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  &.moving {
+    background-color: #ffffff;
+
+    .logo svg {
+      fill: #043e22 !important;
+    }
+
+    .address {
+      color: #000000;
+    }
+
+    .buttons {
+      a {
+        fill: #393939 !important;
+      }
+    }
+  }
+}
+
+header {
+  padding: 1.5rem 2rem;
+}
+
+.divider.line {
+  margin: 0 2rem;
+}
+
+.address {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .5rem;
+}
+
+.buttons {
+  a {
+    margin: 0 1.5rem;
+    fill: #ffffff;
+
+    &:last-child {
+      margin: 0 0rem 0 5rem;
+    }
+  }
+}
