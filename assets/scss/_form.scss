@@ -1,0 +1,59 @@
+.wrapper-columns-footer {
+  display: flex;
+  justify-content: space-between;
+
+  .col {}
+}
+
+
+
+.contact-block {
+  background-image: url("../img/vertical_line.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 5px;
+  padding: 0 0 0 4rem;
+  margin: 2rem 0;
+
+  h4 {
+    color: #A5A5A5;
+    margin: 0 0 .5rem 0;
+    font-weight: 400;
+  }
+
+  p {
+    color: #ffffff;
+    margin: 0 0 .3rem 0;
+  }
+}
+
+.wrapper-contact-form {
+  h2 {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 4rem;
+  }
+}
+
+.wrapper-inputs {
+  display: flex;
+  justify-content: space-between;
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #686868;
+    padding: .5rem 0;
+    border-bottom: 2px solid #9B9B9B;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+  }
+
+  .half-input {
+    width: 100%;
+    padding: 0 1rem;
+  }
+}

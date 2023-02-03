@@ -51,4 +51,44 @@
 .cover-image {
   width: 100%;
   object-fit: cover;
+
+  &.abs {
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.main-container {
+  &.spaced {
+    padding: 5rem 0;
+  }
+}
+
+.info-brochure {
+  padding: 0 2rem;
+}
+
+.wrapper-cover-box {
+  position: relative;
+
+  .centered-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin: -100px 0 0 -300px;
+
+    h2 {
+      color: #ffffff;
+      font-weight: 400;
+      margin: 0;
+      font-size: 4rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.wrapper-info-financiacion {
+  background-color: #ffffff;
+  padding: 3rem;
 }

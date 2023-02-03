@@ -1,0 +1,27 @@
+.section-title {
+  padding: 2rem 0;
+
+  h2 {
+    color: #043E22;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+
+    span {
+      display: inline;
+
+      &:after {
+        display: inline-block;
+        content: "";
+        width: 18px;
+        height: 2px;
+        background-color: #81B829;
+        position: relative;
+        top: 2px;
+        left: 3px;
+      }
+    }
+
+  }
+}

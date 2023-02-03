@@ -1,0 +1,42 @@
+.wrapper-accordion {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.accordion-header {
+  border-bottom: 3px solid #000000;
+  padding: 1rem 0;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    justify-content: space-between;
+  }
+}
+
+.accordion-body {
+  padding: 2rem 0;
+  display: none;
+}
+
+.accordion-btn {
+  font-size: 3rem;
+  color: #81B829;
+  line-height: 0;
+
+  &.closed {
+    &:after {
+      content: "+";
+    }
+  }
+
+  &.open {
+    &:after {
+      content: "-";
+      font-size: 4rem;
+      margin-right: 2px;
+    }
+  }
+}

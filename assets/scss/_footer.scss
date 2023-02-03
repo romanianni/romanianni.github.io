@@ -1,0 +1,36 @@
+.wrapper-footer {}
+
+.top-footer {
+  background-image: url("../img/footer_bg.jpg");
+  background-size: 100%;
+  height: 100vh;
+  padding: 3rem 0;
+
+  .social {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    a {
+      margin: 0 2rem;
+    }
+  }
+}
+
+.copy {
+  p {
+    color: #707070;
+    margin: 2rem auto 0;
+    text-align: center;
+  }
+}
+
+
+.bottom-footer {
+  background-color: #000000;
+  background-image: url("../img/mel_footer.png");
+  background-position: center bottom;
+  background-size: 830px;
+  background-repeat: no-repeat;
+  height: 500px;
+}
