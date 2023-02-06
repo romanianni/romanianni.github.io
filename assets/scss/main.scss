@@ -7,6 +7,7 @@
 @import "accordion";
 @import "map";
 @import "form";
+@import "fade";
 
 
 * {
@@ -78,7 +79,7 @@ a {
 .nice-overlay {
   position: absolute;
   z-index: 1;
-  right: 0;
+  right: -30px;
   top: 25%;
   display: flex;
   justify-content: flex-end;

@@ -157,13 +157,13 @@
       </div>
     </header>
   </div>
-  <div class="main-image">
+  <div class="main-image parallax-window" data-parallax="scroll" data-image-src="/assets/img/main-bg.jpg">
 
     <div class="nice-overlay">
       <img src="/assets/img/nice.svg" alt="">
     </div>
 
-    <img class="bg-image" src="/assets/img/main-bg.jpg" alt="">
+    <!-- <img class="bg-image" src="/assets/img/main-bg.jpg" alt=""> -->
     <div class="foot-main-image">
       <div class="social">
         <a href=""><img src="/assets/img/linkedin.svg" alt=""></a>
@@ -203,7 +203,9 @@
             </div>
           </div>
           <div class="info-brochure">
-            <h2><span class="one">Descubr&iacute;</span><br><span class="two">Cabildo 20</span></h2>
+            <div class="fade-right fade-ani showing">
+              <h2><span class="one">Descubr&iacute;</span><br><span class="two">Cabildo 20</span></h2>
+            </div>
             <div class="line">
               <svg xmlns="http://www.w3.org/2000/svg" width="9" height="160" viewBox="0 0 9 160">
                 <g id="Line" transform="translate(9) rotate(90)">
@@ -245,21 +247,22 @@
           data-paroller-transition="all 0.2s ease-out">
           <img src="/assets/img/brochure1.jpg" alt="">
         </div>
-        <div class="image-brochure-2">
-          <img src="/assets/img/brochure2.jpg" data-paroller-factor="-0.1" data-paroller-factor-xs="0"
-            data-paroller-type="foreground" data-paroller-direction="vertical"
-            data-paroller-transition="all 0.2s ease-out">
+        <div class="image-brochure-2" data-paroller-factor="-0.1" data-paroller-factor-xs="0"
+          data-paroller-type="foreground" data-paroller-direction="vertical"
+          data-paroller-transition="all 0.2s ease-out">
+          <img src="/assets/img/brochure2.jpg">
         </div>
-        <div class="image-brochure-3">
-          <img src="/assets/img/brochure3.jpg" data-paroller-factor="0.3" data-paroller-factor-xs="0"
-            data-paroller-type="foreground" data-paroller-direction="horizontal"
-            data-paroller-transition="all 0.2s ease-out">
+        <div class="image-brochure-3" data-paroller-factor="0.3" data-paroller-factor-xs="0"
+          data-paroller-type="foreground" data-paroller-direction="horizontal"
+          data-paroller-transition="all 0.2s ease-out">
+          <img src="/assets/img/brochure3.jpg">
         </div>
       </div>
     </div>
   </div>
   <!-- -->
-  <div class="wrapper-cover-box unidades">
+  <div class="wrapper-cover-box unidades parallax-window" data-parallax="scroll"
+    data-image-src="/assets/img/unidades_disponibles.jpg">
 
     <div class=" centered-box">
       <h2>Unidades disponibles</h2>
@@ -395,8 +398,9 @@
     </div>
   </div>
   <!-- -->
-  <div class="wrapper-financiacion">
-    <img class="cover-image" src="/assets/img/img-fnanciacion.jpg" alt="">
+  <div class="wrapper-financiacion parallax-window" data-parallax="scroll"
+    data-image-src="/assets/img/img-fnanciacion.jpg">
+
     <div class="wrapper-info-financiacion">
       <div class="info-financiacion">
         <div class="section-title">
@@ -505,6 +509,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="/assets/js/map.js"></script>
 <script src="/assets/js/jquery.paroller.min.js"></script>
+<script src="/assets/js/parallax.min.js"></script>
 <script src="/assets/js/script.js"></script>
 
 </html>

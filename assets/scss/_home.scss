@@ -1,5 +1,6 @@
 .main-image {
   position: relative;
+  height: 100vh;
 
   .bg-image {
     height: 100vh;
@@ -109,7 +110,7 @@
   width: 341px;
   height: 442px;
   right: 760px;
-  top: -160px;
+  top: -180px;
   z-index: 1;
 
   @media(max-width: 1680px) {
@@ -131,7 +132,7 @@
   width: 373px;
   height: 239px;
   bottom: 79px;
-  right: 409px;
+  right: 340px;
 
   @media(max-width: 1680px) {
     right: 300px;
@@ -235,10 +236,7 @@
   position: relative;
   height: 100vh;
 
-  &.unidades {
-    background: url("/assets/img/unidades_disponibles.jpg") no-repeat center;
-    background-size: cover;
-  }
+
 
   .centered-box {
     position: absolute;
@@ -268,9 +266,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 
   @media(max-width: 768px) {
-    height: auto;
+
     display: block;
 
     img {
