@@ -86,7 +86,7 @@
     loopedSlides: 10,
     loop: true,
     spaceBetween: 10,
-    speed: 500,
+    speed: 200,
     pagination: {
       el: ".swiper-pagination",
       renderBullet: function (index, className) {
@@ -115,7 +115,12 @@
       slideChange: function () {
         $(".numActive").text(this.realIndex + 1);
         $(".numNext").text(this.realIndex + 2);
-        console.log(this.realIndex);
+        if (this.realIndex === 2) {
+          $(".numNext").text("1");
+        } else {
+          $(".numNext").text(this.realIndex + 2);
+        }
+
       },
 
     }
@@ -131,5 +136,8 @@
 
   galleryTop.controller.control = galleryThumbs;
   galleryThumbs.controller.control = galleryTop;
+
+  $("[data-paroller-factor]").paroller();
+
 
 }())

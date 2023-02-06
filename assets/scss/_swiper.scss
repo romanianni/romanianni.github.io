@@ -98,6 +98,11 @@
     right: -250px;
     bottom: 100px;
   }
+
+  @media (max-width: 1100px) {
+    width: 85%;
+    right: -450px;
+  }
 }
 
 // .mySwiper .swiper-slide {
@@ -198,5 +203,4 @@
 .pagination-slider {
   margin: 200px 0 0;
   width: 300px;
-
 }

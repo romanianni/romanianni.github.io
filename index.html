@@ -199,10 +199,8 @@
                   <div><span class="sm">+1000m2</span><span>de amenities</span></div>
                   <div class="bottom-sub-block"><span>Cocheras disponibles</span></div>
                 </div>
-
               </div>
             </div>
-
           </div>
           <div class="info-brochure">
             <h2><span class="one">Descubr&iacute;</span><br><span class="two">Cabildo 20</span></h2>
@@ -215,14 +213,25 @@
             </div>
             <div class="info-bottom-brochure">
               <h4>1, 2, 3 y 4 ambientes<br>y estudios profesionales</h4>
-              <p>Ambientes con terminaciones de excelente<br>calidad, con un diseño jóven y moderno.<br>
-                Un edificio pensado para disfrutar la vida urbana,<br>rodeado de entretenimiento, restaurantes,
-                bares,<br>
-                últimas tendencias y todo lo que estabas<br>buscando.</p>
-              <a href="#" class="default-button dark">
-                Descargar brochure
-              </a>
+              <div class="desc-brochure-desktop">
+                <p>Ambientes con terminaciones de excelente<br>calidad, con un diseño jóven y moderno.<br>
+                  Un edificio pensado para disfrutar la vida urbana,<br>rodeado de entretenimiento, restaurantes,
+                  bares,<br>
+                  últimas tendencias y todo lo que estabas<br>buscando.</p>
+                <a href="#" class="default-button dark">
+                  Descargar brochure
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="desc-brochure-mobile">
+            <p>Ambientes con terminaciones de excelente<br>calidad, con un diseño jóven y moderno.<br>
+              Un edificio pensado para disfrutar la vida urbana,<br>rodeado de entretenimiento, restaurantes,
+              bares,<br>
+              últimas tendencias y todo lo que estabas<br>buscando.</p>
+            <a href="#" class="default-button dark">
+              Descargar brochure
+            </a>
           </div>
         </div>
       </div>
@@ -231,23 +240,28 @@
 
     <div class="wrapper-brochure-bottom">
       <div class="main-container spaced">
-        <div class="image-brochure-1">
+        <div class="image-brochure-1" data-paroller-factor="-0.1" data-paroller-factor-xs="0.1"
+          data-paroller-type="foreground" data-paroller-direction="horizontal"
+          data-paroller-transition="all 0.2s ease-out">
           <img src="/assets/img/brochure1.jpg" alt="">
         </div>
         <div class="image-brochure-2">
-          <img src="/assets/img/brochure2.jpg" alt="">
+          <img src="/assets/img/brochure2.jpg" data-paroller-factor="-0.1" data-paroller-factor-xs="0"
+            data-paroller-type="foreground" data-paroller-direction="vertical"
+            data-paroller-transition="all 0.2s ease-out">
         </div>
         <div class="image-brochure-3">
-          <img src="/assets/img/brochure3.jpg" alt="">
+          <img src="/assets/img/brochure3.jpg" data-paroller-factor="0.3" data-paroller-factor-xs="0"
+            data-paroller-type="foreground" data-paroller-direction="horizontal"
+            data-paroller-transition="all 0.2s ease-out">
         </div>
       </div>
     </div>
   </div>
   <!-- -->
-  <div class="wrapper-cover-box">
-    <img class="cover-image" src="/assets/img/unidades_disponibles.jpg" alt="">
+  <div class="wrapper-cover-box unidades">
 
-    <div class="centered-box">
+    <div class=" centered-box">
       <h2>Unidades disponibles</h2>
       <a href="#" class="default-button">
         Descubrilas
@@ -490,6 +504,7 @@
 <script src="/assets/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="/assets/js/map.js"></script>
+<script src="/assets/js/jquery.paroller.min.js"></script>
 <script src="/assets/js/script.js"></script>
 
 </html>

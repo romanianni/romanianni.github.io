@@ -108,7 +108,7 @@
 .image-brochure-2 {
   width: 341px;
   height: 442px;
-  right: 782px;
+  right: 760px;
   top: -160px;
   z-index: 1;
 
@@ -200,10 +200,45 @@
   }
 }
 
+.desc-brochure-mobile {
+  display: none;
+  width: 100%;
+  text-align: center;
+  padding: 0 2rem;
 
+  @media (max-width: 768px) {
+    display: block;
+    order: 3;
+  }
+
+  p {
+    text-align: left;
+    margin-top: 2rem;
+
+    br {
+      display: none;
+    }
+  }
+
+  .default-button {}
+}
+
+.desc-brochure-desktop {
+
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
 
 .wrapper-cover-box {
   position: relative;
+  height: 100vh;
+
+  &.unidades {
+    background: url("/assets/img/unidades_disponibles.jpg") no-repeat center;
+    background-size: cover;
+  }
 
   .centered-box {
     position: absolute;
@@ -211,6 +246,12 @@
     left: 50%;
     text-align: center;
     margin: -100px 0 0 -300px;
+
+    @media (max-width: 768px) {
+      margin: 0;
+      left: 0;
+      top: 30%;
+    }
 
     h2 {
       color: #ffffff;
@@ -227,6 +268,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media(max-width: 768px) {
+    height: auto;
+    display: block;
+
+    img {
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
 }
 
 .wrapper-info-financiacion {
@@ -235,8 +286,12 @@
 
   position: absolute;
   z-index: 2;
-  bottom: -20px;
+  bottom: -50px;
 
+  @media(max-width: 768px) {
+    position: relative;
+    padding: 2rem 2rem 3rem;
+  }
 
   .section-title {
     padding: 0;
@@ -249,6 +304,11 @@
 
   .line {
     margin-right: 2rem;
+
+    @media (max-width: 768px) {
+      height: 80px;
+      overflow: hidden;
+    }
   }
 
   .data {
@@ -256,6 +316,10 @@
       font-size: 4rem;
       font-weight: 400;
       color: #043E22;
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
 
       span {
         color: #81B829;
@@ -276,13 +340,21 @@
     order: 2;
     width: 100%;
     padding: 0;
+    height: 80vh;
   }
 
   .image {
     position: relative;
+    z-index: 3;
 
     img {
       width: 100%;
+
+      @media(max-width: 768px) {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -295,6 +367,11 @@
     display: flex;
     border-top: 2px solid rgba(255, 255, 255, .37);
 
+    @media(max-width: 768px) {
+      flex-wrap: wrap;
+      border-top: none;
+    }
+
     >div {
       padding: 30px;
       text-align: center;
@@ -304,6 +381,9 @@
     .block2 {
       border-right: 2px solid rgba(255, 255, 255, .37);
 
+      @media(max-width: 768px) {
+        width: 50%;
+      }
     }
 
     .block3 {
@@ -312,6 +392,7 @@
       flex-direction: column;
       padding: 0;
 
+      border-top: 2px solid rgba(255, 255, 255, .37);
 
       >div {
         flex: 1;
@@ -319,7 +400,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @media(max-width: 768px) {
+          padding: 20px;
+        }
       }
+    }
+
+    @media(max-width: 768px) {
+      width: 100%;
     }
 
     .bottom-sub-block {

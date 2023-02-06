@@ -5,17 +5,28 @@
   padding: 4rem 0;
 
   @media (max-width: 1440px) {
-    width: 1300px;
+    max-width: 1300px;
+    padding: 4rem 3rem;
   }
 
-  @media (max-width: 1440px) {
-    width: 1200px;
+  @media (max-width: 1366px) {
+    max-width: 1200px;
+    padding: 4rem 3rem;
+  }
+
+  @media (max-width: 1024) {
+
+    padding: 4rem 0rem;
   }
 }
 
 .accordion-header {
   border-bottom: 3px solid #000000;
   padding: 1rem 0;
+
+  @media (max-width: 768px) {
+    padding: 1rem 2rem;
+  }
 
   h3 {
     display: flex;
