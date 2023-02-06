@@ -282,7 +282,7 @@ header {
       order: 3; } }
   .desc-brochure-mobile p {
     text-align: left;
-    margin-top: 2rem; }
+    margin: 0 0 3rem; }
     .desc-brochure-mobile p br {
       display: none; }
 
@@ -364,7 +364,7 @@ header {
     order: 2;
     width: 100%;
     padding: 0;
-    height: 80vh; } }
+    height: 100vh; } }
 .img-info .image {
   position: relative;
   z-index: 3; }
