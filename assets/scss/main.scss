@@ -14,8 +14,10 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   overflow-x: hidden;
+  width: 100%;
 }
 
 h1,
@@ -55,6 +57,8 @@ a {
   font-family: "Lato", sans-serif;
   font-weight: 700;
   display: inline-block;
+  position: relative;
+  z-index: 1;
 
   &.dark {
     background-color: #393939;
@@ -68,9 +72,36 @@ a {
   z-index: 1;
   right: 0;
   top: 25%;
+  display: flex;
+  justify-content: flex-end;
+
+  @media(max-width: 1680px) {
+    top: 20%;
+  }
+
+  @media(max-width: 768px) {
+    top: 26%;
+    right: -300px;
+  }
 
   img {
     width: 100%;
+
+    @media(max-width: 1680px) {
+      width: 86%;
+    }
+
+    @media(max-width: 1440px) {
+      width: 75%;
+    }
+
+    @media(max-width: 1366px) {
+      width: 71%;
+    }
+
+    @media(max-width: 768px) {
+      width: 94%;
+    }
   }
 }
 

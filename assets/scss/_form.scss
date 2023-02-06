@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-between;
 
-  .col {}
+  .column {
+    &.form {
+      width: 40%;
+    }
+  }
 }
 
 
@@ -37,6 +41,7 @@
 .wrapper-inputs {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 
   input,
   select,
@@ -50,10 +55,38 @@
 
     font-family: "Lato", sans-serif;
     font-weight: 600;
+    resize: none;
+
+    &:focus,
+    &::selection {
+      outline: none !important;
+    }
+  }
+
+  textarea {
+    height: 44px;
+    margin-top: 3rem;
   }
 
   .half-input {
     width: 100%;
-    padding: 0 1rem;
+
+    &:first-child {
+      margin-right: 2rem;
+    }
   }
+}
+
+input[type="submit"] {
+  background: none;
+  border: none;
+  color: #043E22;
+  background-color: #81B829;
+  padding: .8rem 3rem;
+  border-radius: 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
 }

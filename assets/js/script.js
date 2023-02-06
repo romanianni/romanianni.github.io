@@ -1,5 +1,14 @@
 (function () {
 
+  $("#close-mobile-menu").on("click", function (e) {
+    e.preventDefault();
+    $(".mobile-menu").removeClass("open");
+  })
+
+  $("#open-mobile-menu").on("click", function (e) {
+    e.preventDefault();
+    $(".mobile-menu").addClass("open");
+  })
 
 
   $(window).on("load scroll", function (e) {

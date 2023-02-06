@@ -2,6 +2,15 @@
   width: 100%;
   max-width: 1600px;
   margin: 0 auto;
+  padding: 4rem 0;
+
+  @media (max-width: 1440px) {
+    width: 1300px;
+  }
+
+  @media (max-width: 1440px) {
+    width: 1200px;
+  }
 }
 
 .accordion-header {

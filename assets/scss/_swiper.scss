@@ -8,10 +8,19 @@
     left: 150px;
     z-index: 2;
 
+    @media(max-width: 1366px) {
+      top: 100px;
+      left: 100px;
+    }
+
     h3 {
       color: #ffffff;
       font-size: 5rem;
       font-weight: 400;
+
+      @media(max-width: 1366px) {
+        font-size: 4rem;
+      }
     }
 
     .arrow-link {
@@ -83,6 +92,12 @@
   right: -150px;
   padding: 10px 0;
   bottom: 50px;
+
+  @media (max-width: 1366px) {
+    width: 68%;
+    right: -250px;
+    bottom: 100px;
+  }
 }
 
 // .mySwiper .swiper-slide {

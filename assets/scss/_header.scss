@@ -8,6 +8,16 @@
   transition: background-color ease-in .2s;
 
   .logo {
+    @media(max-width: 768px) {
+      display: none;
+
+      &.logo-mobile-centered {
+        display: flex;
+      }
+
+    }
+
+
     svg {
       fill: #ffffff;
     }
@@ -16,6 +26,7 @@
   &.moving {
     background-color: #ffffff;
 
+    .logo-mobile-centered svg,
     .logo svg {
       fill: #043e22 !important;
     }
@@ -34,6 +45,10 @@
 
 header {
   padding: 1.5rem 2rem;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 1rem;
+  }
 }
 
 .divider.line {
@@ -48,12 +63,51 @@ header {
 }
 
 .buttons {
+
+  @media(max-width: 768px) {
+    justify-content: space-between;
+    width: 100%;
+  }
+
   a {
     margin: 0 1.5rem;
     fill: #ffffff;
 
+    @media(max-width: 768px) {
+      margin: 0;
+    }
+
     &:last-child {
       margin: 0 0rem 0 5rem;
+
+      @media(max-width: 768px) {
+        margin: 0;
+      }
     }
+
+    @media(max-width: 768px) {
+      &.whatsapp-icon {
+        order: 3;
+
+      }
+
+      &.celular-icon {
+        order: 4;
+        margin: 0 0 0 1rem;
+      }
+
+      &.open-menu-icon {
+        order: 1;
+      }
+    }
+  }
+
+  .logo-mobile-centered {
+    order: 2;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 2rem;
+    display: none;
   }
 }
