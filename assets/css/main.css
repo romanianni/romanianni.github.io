@@ -136,6 +136,9 @@ header {
   justify-content: flex-start;
   width: 98%;
   padding: 0 3%; }
+  @media (max-width: 768px) {
+    .foot-main-image {
+      bottom: 150px; } }
   .foot-main-image .social {
     display: flex;
     flex-direction: column;
