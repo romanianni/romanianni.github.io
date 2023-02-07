@@ -1019,6 +1019,9 @@ a {
   .wrapper-swiper .slider-info-text {
     top: 50px; }
 
+  .wrapper-swiper .slider-info-text h3 {
+    font-size: 3rem; }
+
   .wrapper-swiper .slider-info-text .arrow-link {
     margin-top: 50px; }
 
@@ -1036,6 +1039,12 @@ a {
 
   .wrapper-info-financiacion .data h2 {
     font-size: 3rem; }
+
+  .accordion-body .col.col-image {
+    display: none; }
+
+  .wrapper-columns-footer .column.form {
+    width: 50%; }
 
   .main-container {
     max-width: 725px; }
