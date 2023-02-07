@@ -323,7 +323,8 @@ header {
     object-fit: contain;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    width: 100%; }
     @media (max-width: 768px) {
       .wrapper-financiacion .image-financiacion {
         background-size: 235%;
