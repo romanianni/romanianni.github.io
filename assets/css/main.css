@@ -376,7 +376,7 @@ header {
     order: 2;
     width: 100%;
     padding: 0;
-    height: 100vh; } }
+    height: 80vh; } }
 .img-info .image {
   position: relative;
   z-index: 3; }
