@@ -983,7 +983,7 @@ a {
 
   .foot-main-image .social {
     display: none; } }
-@media only screen and (min-device-width: 480px) and (max-device-width: 640px) and (orientation: landscape) {
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
   .navigation-module {
     display: none !important; }
 
