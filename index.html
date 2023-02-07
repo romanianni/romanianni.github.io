@@ -73,14 +73,14 @@
       </div>
     </div>
     <ul>
-      <li><a href="" class="active">Inicio</a></li>
-      <li> <a href="">Acerca de Cabildo 20</a></li>
-      <li><a href="">Unidades disponibles</a></li>
-      <li> <a href="">Amenities</a></li>
-      <li> <a href="">Memoria descriptiva</a></li>
-      <li> <a href="">Financiación</a></li>
-      <li> <a href="">Ubicación</a></li>
-      <li> <a href="">Contacto</a></li>
+      <li><a href="#" data-link="home">Inicio</a></li>
+      <li><a href="" data-link="about">Acerca de Cabildo 20</a></li>
+      <li><a href="" data-link="unidades">Unidades disponibles</a></li>
+      <li> <a href="" data-link="amenities">Amenities</a></li>
+      <li> <a href="" data-link="memoria">Memoria descriptiva</a></li>
+      <li> <a href="" data-link="financiacion">Financiación</a></li>
+      <li> <a href="" data-link="map">Ubicación</a></li>
+      <li> <a href="" data-link="contacto">Contacto</a></li>
 
     </ul>
     <div class="logo-menu-nice">
@@ -159,7 +159,7 @@
       </div>
     </header>
   </div>
-  <div class="main-image parallax-window" data-parallax="scroll" data-image-src="/assets/img/main-bg.jpg">
+  <div id="home" class="main-image parallax-window" data-parallax="scroll" data-image-src="/assets/img/main-bg.jpg">
 
     <div class="nice-overlay">
       <img src="/assets/img/nice.svg" alt="">
@@ -181,7 +181,7 @@
     </div>
   </div>
   <!--  -->
-  <div class="wrapper-brochure">
+  <div id="about" class="wrapper-brochure">
     <div class="wrapper-brochure-top">
       <div class="main-container spaced">
         <div class="d-flex justify-content-center flex-wrap">
@@ -260,7 +260,7 @@
     </div>
   </div>
   <!-- -->
-  <div class="wrapper-cover-box unidades parallax-window" data-parallax="scroll"
+  <div id="unidades" class="wrapper-cover-box unidades parallax-window" data-parallax="scroll"
     data-image-src="/assets/img/unidades_disponibles.jpg">
 
     <div class=" centered-box">
@@ -272,13 +272,13 @@
 
   </div>
   <!-- -->
-  <div class="section-title">
+  <div id="amenities" class="section-title">
     <div class="main-container">
       <h2><span>Amenities</span></h2>
     </div>
   </div>
   <!-- -->
-  <div class="wrapper-swiper">
+  <div id="memoria" class="wrapper-swiper">
     <div class="slider-info-text">
       <h3>SUM con<br>pileta cubierta</h3>
       <a href="#" class="arrow-link"><span>Ver más</span><svg id="Arrow_more" data-name="Arrow more"
@@ -334,7 +334,7 @@
     </div>
   </div>
   <!-- -->
-  <div class="wrapper-accordion">
+  <div id="memoria" class="wrapper-accordion">
     <div class="accordion-block">
       <div class="accordion-header">
         <h3><span>Memoria descriptiva y técnica</span><a href="#" class="accordion-btn closed"></a></h3>
@@ -473,7 +473,7 @@
     </div>
   </div>
   <!-- -->
-  <div class="wrapper-financiacion">
+  <div id="financiacion" class="wrapper-financiacion">
     <div class="image-financiacion"></div>
     <div class="wrapper-info-financiacion">
 
@@ -502,7 +502,7 @@
   <!-- MAPA -->
   <div id="map"></div>
   <!-- FIN MAPA -->
-  <div class="wrapper-footer">
+  <div id="contacto" class="wrapper-footer">
     <footer>
       <div class="top-footer">
         <div class="main-container">
