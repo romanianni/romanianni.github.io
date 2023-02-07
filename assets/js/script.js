@@ -28,6 +28,28 @@
 
   });
 
+  $(window).on("scroll", function (e) {
+
+    var wScroll = $(window).scrollTop();
+
+
+
+    var img1 = $(".image-brochure-1");
+    var img2 = $(".image-brochure-2");
+    var img3 = $(".image-brochure-3");
+
+
+
+    var img1pos = img1.css("left").replace(/[^-\d\.]/g, '')
+    var img2pos = img2.css("top").replace(/[^-\d\.]/g, '')
+    var img3pos = img3.css("right").replace(/[^-\d\.]/g, '')
+
+    img1.css("left", ((- 100 + wScroll * 0.1)) + "px");
+    img2.css("top", ((- 350 + wScroll * 0.1)) + "px");
+    img3.css("right", ((180 + wScroll * 0.1)) + "px");
+
+  });
+
 
   /**
    * Header Sticky on Scroll
@@ -135,13 +157,17 @@
 
 
   $("[data-paroller-factor]").paroller();
+
+
+
   const example = new Textify({
     selector: ".prueba",
     easing: "sharp",
     top: true,
     once: false,
     rotation: 1,
-    duration: 500
+    duration: 1000,
+    fade: true
   });
 
 
@@ -150,7 +176,30 @@
     easing: "sharp",
     top: false,
     once: false,
-    rotation: 1,
-    duration: 200
+    duration: 200,
+    fade: true
   });
+
+  const example3 = new Textify({
+    selector: ".fadeText",
+    easing: "linear",
+    duration: 500,
+    fade: true
+  });
+
+  $(".accordion-btn").on("click", function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("open")) {
+      $(this).removeClass("open");
+      $(this).addClass("closed");
+      $(".accordion-body").hide();
+      return
+    }
+    $(".accordion-body").hide();
+    $(".accordion-btn").removeClass("open").addClass("closed");
+    $(this).addClass("open");
+    $(this).parent().parent().parent().find(".accordion-body").fadeIn();
+  })
+
+
 }())

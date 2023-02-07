@@ -270,7 +270,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+
+  .image-financiacion {
+    height: 100vh;
+    background-image: url("../img/img-fnanciacion.jpg");
+    object-fit: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media(max-width: 768px) {
+      background-size: 235%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 
   @media(max-width: 768px) {
 
@@ -294,6 +308,7 @@
   @media(max-width: 768px) {
     position: relative;
     padding: 2rem 2rem 3rem;
+    bottom: 0;
   }
 
   .section-title {
@@ -321,7 +336,7 @@
       color: #043E22;
 
       @media (max-width: 768px) {
-        font-size: 2rem;
+        font-size: 1.8rem;
       }
 
       span {

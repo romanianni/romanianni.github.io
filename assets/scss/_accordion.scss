@@ -14,9 +14,14 @@
     padding: 4rem 3rem;
   }
 
-  @media (max-width: 1024) {
+  @media (max-width: 1024px) {
 
     padding: 4rem 0rem;
+  }
+
+  @media (max-width: 768px) {
+
+    padding: 2rem 0rem;
   }
 }
 
@@ -39,12 +44,54 @@
 .accordion-body {
   padding: 2rem 0;
   display: none;
+
+  h3 {
+    font-weight: 400;
+    color: #043E22;
+    font-size: 1.4rem;
+  }
+
+  .col {
+    padding: 0 1rem;
+
+    @media(max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  ul {
+    li {
+      color: #707070;
+      margin-bottom: 1rem;
+      background-position: left 12px;
+      background-image: url("../img/bullet.png");
+      background-repeat: no-repeat;
+      list-style: none;
+      padding-left: 20px;
+
+    }
+  }
+}
+
+.col-image {
+  @media(max-width: 768px) {
+    display: none;
+  }
+}
+
+.wrapper-cols-accordion {
+  display: flex;
+  justify-content: space-between;
 }
 
 .accordion-btn {
   font-size: 3rem;
   color: #81B829;
   line-height: 0;
+
+  &:hover {
+    color: #043E22;
+  }
 
   &.closed {
     &:after {

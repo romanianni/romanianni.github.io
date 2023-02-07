@@ -315,8 +315,19 @@ header {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 100vh; }
+  justify-content: center; }
+  .wrapper-financiacion .image-financiacion {
+    height: 100vh;
+    background-image: url("../img/img-fnanciacion.jpg");
+    object-fit: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center; }
+    @media (max-width: 768px) {
+      .wrapper-financiacion .image-financiacion {
+        background-size: 235%;
+        background-repeat: no-repeat;
+        background-position: center; } }
   @media (max-width: 768px) {
     .wrapper-financiacion {
       display: block; }
@@ -333,7 +344,8 @@ header {
   @media (max-width: 768px) {
     .wrapper-info-financiacion {
       position: relative;
-      padding: 2rem 2rem 3rem; } }
+      padding: 2rem 2rem 3rem;
+      bottom: 0; } }
   .wrapper-info-financiacion .section-title {
     padding: 0;
     margin: 0 0 2rem 0; }
@@ -351,7 +363,7 @@ header {
     color: #043E22; }
     @media (max-width: 768px) {
       .wrapper-info-financiacion .data h2 {
-        font-size: 2rem; } }
+        font-size: 1.8rem; } }
     .wrapper-info-financiacion .data h2 span {
       color: #81B829;
       padding-right: 10px; }
@@ -577,6 +589,9 @@ header {
 .pagination-slider {
   margin: 200px 0 0;
   width: 300px; }
+  @media (max-width: 768px) {
+    .pagination-slider {
+      margin: 100px 0 0; } }
 
 .mobile-menu {
   position: absolute;
@@ -671,9 +686,12 @@ header {
     .wrapper-accordion {
       max-width: 1200px;
       padding: 4rem 3rem; } }
-  @media (max-width: 1024) {
+  @media (max-width: 1024px) {
     .wrapper-accordion {
       padding: 4rem 0rem; } }
+  @media (max-width: 768px) {
+    .wrapper-accordion {
+      padding: 2rem 0rem; } }
 
 .accordion-header {
   border-bottom: 3px solid #000000;
@@ -690,11 +708,38 @@ header {
 .accordion-body {
   padding: 2rem 0;
   display: none; }
+  .accordion-body h3 {
+    font-weight: 400;
+    color: #043E22;
+    font-size: 1.4rem; }
+  .accordion-body .col {
+    padding: 0 1rem; }
+    @media (max-width: 768px) {
+      .accordion-body .col {
+        width: 100%; } }
+  .accordion-body ul li {
+    color: #707070;
+    margin-bottom: 1rem;
+    background-position: left 12px;
+    background-image: url("../img/bullet.png");
+    background-repeat: no-repeat;
+    list-style: none;
+    padding-left: 20px; }
+
+@media (max-width: 768px) {
+  .col-image {
+    display: none; } }
+
+.wrapper-cols-accordion {
+  display: flex;
+  justify-content: space-between; }
 
 .accordion-btn {
   font-size: 3rem;
   color: #81B829;
   line-height: 0; }
+  .accordion-btn:hover {
+    color: #043E22; }
   .accordion-btn.closed:after {
     content: "+"; }
   .accordion-btn.open:after {
