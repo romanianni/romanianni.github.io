@@ -1,5 +1,7 @@
 (function () {
 
+
+  screen.orientation.lock("portrait");
   $("#close-mobile-menu").on("click", function (e) {
     e.preventDefault();
     $(".mobile-menu").removeClass("open");
