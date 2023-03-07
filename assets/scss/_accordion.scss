@@ -58,6 +58,16 @@
       width: 100%;
       padding: 0 2rem;
     }
+
+    &.col-image {
+      @media (max-width: 1366px) {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 
   ul {
@@ -83,6 +93,10 @@
 .wrapper-cols-accordion {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1366px) {
+    flex-direction: column;
+  }
 }
 
 .accordion-btn {

@@ -70,6 +70,18 @@ a {
   position: relative;
   z-index: 1;
 
+  &:hover {
+    color: #043E22;
+  }
+
+  &.alternate {
+    border: 2px solid #393939;
+
+    &:hover {
+      border: 2px solid #81B829;
+    }
+  }
+
   &.dark {
     background-color: #393939;
     color: #ffffff;

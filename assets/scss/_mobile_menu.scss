@@ -1,7 +1,7 @@
 .mobile-menu {
   position: absolute;
   top: 0;
-  left: -700px;
+  left: -12200px;
 
   bottom: 0;
   background-color: rgba(#000000, .85);
@@ -23,7 +23,7 @@
 
     li {
       width: 100%;
-
+      text-align: right;
       border-bottom: 1px solid rgba(#707070, .31);
 
       a {
