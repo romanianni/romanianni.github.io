@@ -72,6 +72,9 @@ header {
   a {
     margin: 0 1.5rem;
     fill: #ffffff;
+    width: 32px;
+    height: 32px;
+    display: block;
 
     @media(max-width: 768px) {
       margin: 0;
